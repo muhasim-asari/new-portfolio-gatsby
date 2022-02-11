@@ -1,0 +1,30 @@
+@import "../../../static/sass/variables";
+
+.leftSide {
+  box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
+    0 7px 18px rgba(0, 9, 128, 0.05);
+  text-align: center;
+  background: #fff;
+  position: relative;
+  border-radius: 0.25rem;
+
+  .downResume {
+    background: #2583fd;
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -19px;
+    z-index: 9;
+    right: 30px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: 0 2px 6px 0 rgba(37, 131, 253, 0.5);
+    padding: 0;
+  }
+}

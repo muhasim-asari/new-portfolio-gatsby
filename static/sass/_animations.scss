@@ -1,0 +1,17 @@
+@keyframes loading1 {
+	100% {
+		-webkit-transform: rotate(-360deg);
+		-moz-transform: rotate(-360deg);
+		-o-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+}
+@keyframes loading2 {
+	50% {
+		border-radius: 50%;
+		-webkit-transform: scale(0.4, 0.4) rotate(-90deg);
+		-moz-transform: scale(0.4, 0.4) rotate(-90deg);
+		-o-transform: scale(0.4, 0.4) rotate(-90deg);
+		transform: scale(0.4, 0.4) rotate(-90deg);
+	}
+}
