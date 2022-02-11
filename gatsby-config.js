@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
-          id: process.env.API_TOKEN_ADOBE
+          id: process.env.ADOBE_FONT_SECRET_ID
         }
       }
     },
