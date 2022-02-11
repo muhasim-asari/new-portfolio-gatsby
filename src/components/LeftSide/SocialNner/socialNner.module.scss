@@ -1,0 +1,62 @@
+@import "../../../../static/sass/variables";
+
+.socialNner {
+  position: absolute;
+  bottom: 14%;
+
+  ul {
+    margin: 0;
+
+    li {
+      transform-origin: left;
+      transition: 0.5s;
+      transform: translateX(0);
+      margin-bottom: 20px;
+
+      a {
+        display: inline-block;
+        height: 50px;
+        width: 70px;
+        line-height: 50px;
+        border-radius: 50px 0 0 50px;
+        text-align: left;
+        padding-left: 30px;
+
+        i {
+          color: #fff;
+          width: 20px;
+          height: auto;
+
+          .fbIcon {
+            background: #3b5998;
+          }
+
+          .instaIcon {
+            background: #c13584;
+          }
+
+          .linkedinIcon {
+            background: #0077b5;
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    ul {
+      li {
+        transform: translateX(-70px);
+        &:nth-child(1) {
+          transition-delay: .1s;
+        }
+        &:nth-child(2) {
+          transition-delay: .3s;
+        }
+        &:nth-child(3) {
+          transition-delay: .5s;
+        }
+      }
+    }
+  }
+}

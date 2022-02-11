@@ -17,3 +17,112 @@ a {
   text-decoration: none !important;
   outline: 0 !important;
 }
+
+.wrapper-page {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.secWrapper {
+  .allPages {
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
+      0 7px 18px rgba(0, 9, 128, 0.05);
+    border-radius: 0.25rem;
+    background: #fff;
+
+    .ptPage {
+      visibility: visible;
+      position: static;
+      box-shadow: none;
+
+      .ptContentFull {
+        height: 100%;
+        overflow: hidden;
+
+        .ptScrollPdd {
+          padding: 40px !important;
+        }
+      }
+    }
+  }
+}
+
+.toolTipItem {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 20px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+}
+
+.toolTipContent {
+  position: absolute;
+  z-index: 9999;
+  width: 120px;
+  left: -47px;
+  bottom: 36px;
+  text-align: left;
+  font-size: 0.765em;
+  box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
+    0 7px 18px rgba(0, 9, 128, 0.05);
+  line-height: 1.4;
+  background: #fff;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 11px;
+  color: #333;
+  font-weight: 800;
+  border-radius: 0.25rem;
+
+  &::after {
+    content: "";
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+}
+
+.toolTipCust {
+  display: inline;
+  position: relative;
+  z-index: 999;
+
+  &:hover {
+    .toolTipItem {
+      &::after {
+        pointer-events: auto;
+      }
+    }
+
+    .toolTipContent {
+      pointer-events: auto;
+      opacity: 1;
+      transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+    }
+  }
+
+  .toolTipContent {
+    transform: translate3d(0, 10px, 0) rotate3d(1, 1, 0, 25deg);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+}
