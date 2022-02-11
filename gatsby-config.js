@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Muhasim_asari | Portfolio Website`,
@@ -17,13 +19,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
-        fonts: [
-          `Poppins:300,400,500,600,700`
-        ], display: 'swap'
+        typekit: {
+          id: process.env.API_TOKEN_ADOBE
+        }
       }
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `Poppins:300,400,500,600,700`
+    //     ], display: 'swap'
+    //   }
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
