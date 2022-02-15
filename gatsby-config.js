@@ -5,7 +5,7 @@ module.exports = {
     title: `Muhasim_asari | Portfolio Website`,
     description: `Passionates in frontend developer and UI/UX Designer since I was in college. Always looking forward to improve myself and learning something new to improving my skill. I loved to learning by doing and capable to work in team well. I also love to spread happiness. `,
     author: `Muhammad Hasim Asari <muhasim2asari@gmail.com>`,
-    siteUrl: `http://localhost:8000/`,
+    siteUrl: `https://muhasim.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -26,14 +26,6 @@ module.exports = {
         }
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       `Poppins:300,400,500,600,700`
-    //     ], display: 'swap'
-    //   }
-    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

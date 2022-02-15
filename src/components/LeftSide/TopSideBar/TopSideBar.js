@@ -3,50 +3,56 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Briefcase, DollarSign, Facebook, Instagram, Layers, Linkedin } from "react-feather"
 
-import "./topSideBar.module.scss"
+import * as styles from "./topSideBar.module.scss"
 
 const TopSideBar = () => (
-  <div className="topSideBar">
-    <div className="imgProfile">
-      <StaticImage />
+  <div className={styles.topSideBar}>
+    <div className={styles.imgProfile}>
+      <StaticImage
+        src="../../../../static/images/pp.png"
+        width={500}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="A Gatsby astronaut"
+      />
     </div>
-    <div className="nameProfile">
+    <div className={styles.nameProfile}>
       <h4>Muhammad Hasim As'ari</h4>
-      <span>Front-End Developer & Web Designer</span>
-      <div className="socialMobile">
+      <span className={styles.asKnown}>Front-End Developer & Web Designer</span>
+      <div className={styles.socialMobile}>
         <ul className="listUnstyled">
           <li>
-            <Link to="/" target="_blank" className="fbIcon">
-              <Facebook size={24} />
+            <Link to="/" target="_blank" className={styles.fbIcon}>
+              <Facebook size={18} />
             </Link>
           </li>
           <li>
-            <Link to="/" target="_blank" className="instaIcon">
-              <Instagram size={24} />
+            <Link to="/" target="_blank" className={styles.instaIcon}>
+              <Instagram size={18} />
             </Link>
           </li>
           <li>
-            <Link to="/" target="_blank" className="linkedIn">
-              <Linkedin size={24} />
+            <Link to="/" target="_blank" className={styles.linkedIn}>
+              <Linkedin size={18} />
             </Link>
           </li>
         </ul>
       </div>
-      <div className="infoProfile">
-        <div className="infoBox experience">
+      <div className={styles.infoProfile}>
+        <div className={`${styles.infoBox} experience`}>
           <Briefcase size={24} />
-          <span className="number">3</span>
-          <span className="title">Years</span>
+          <span className={styles.number}>3</span>
+          <span className={styles.title}>Years</span>
         </div>
-        <div className="infoBox rate">
+        <div className={`${styles.infoBox} rate`}>
           <DollarSign size={24} />
-          <span className="number">24</span>
-          <span className="title">Hours</span>
+          <span className={styles.number}>24</span>
+          <span className={styles.title}>Hours</span>
         </div>
-        <div className="infoBox work">
+        <div className={`${styles.infoBox} work`}>
           <Layers size={24} />
-          <span className="number">12</span>
-          <span className="title">Projects</span>
+          <span className={styles.number}>12</span>
+          <span className={styles.title}>Project</span>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 @import "../../../../static/sass/variables";
-@import "../../../../static/sass/general";
+@import "../../../../static/sass/styles";
 
-.footerSidebar {
+.footerSideBar {
   .sideBarLinks {
     .mainLinks {
       margin: 0;
@@ -21,6 +21,11 @@
           left: 0;
           z-index: 1;
 
+          .tooltipContent {
+            left: -31px;
+            bottom: 71px;
+          }
+
           a {
             background: #f94b39;
             width: 58px;
@@ -30,8 +35,50 @@
             box-shadow: 0 4px 8px 0 rgba(249, 75, 57, 0.48);
             border-radius: 50%;
 
-            i {
+            svg {
               color: #fff;
+            }
+          }
+        }
+
+        a {
+          color: #b7c6c9;
+          i {
+            font-size: 20px;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-right: 30%;
+        }
+      }
+
+      li {
+        .active {
+          &:nth-child(3) {
+            a {
+              i {
+                color: #fff;
+              }
+              .tooltipContent {
+                left: -31px;
+                bottom: 71px;
+                background: #f94b39;
+                box-shadow: 0 4px 8px 0 rgba(249, 75, 57, 0.48);
+                color: #fff;
+                top: auto;
+                &::after {
+                  border-top-color: #f94b39;
+                  border-bottom-color: transparent;
+                  top: 100%;
+                  bottom: auto;
+                }
+              }
+            }
+          }
+          a {
+            i {
+              color: #2583fd;
             }
           }
         }

@@ -18,6 +18,11 @@ a {
   outline: 0 !important;
 }
 
+.listUnstyled {
+  padding: 0;
+  list-style: none;
+}
+
 .wrapper-page {
   height: auto;
   display: flex;
@@ -45,6 +50,20 @@ a {
           padding: 40px !important;
         }
       }
+    }
+  }
+}
+
+.tooltipCust {
+  display: inline;
+  position: relative;
+  z-index: 999;
+  &:hover {
+
+    .tooltipItem {
+      &::after {
+				pointer-events: auto;
+			}
     }
   }
 }
