@@ -6,10 +6,14 @@ import Layout from "../components/Template/layout";
 import Seo from "../components/Template/seo";
 
 import "../../static/main.scss"
+import LeftSide from "../components/LeftSide/LeftSide";
+import RightSide from "../components/RightSide/RightSide";
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <LeftSide />
+    <RightSide />
+    {/* <Seo title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -23,7 +27,7 @@ const IndexPage = () => (
     />
     <p>
       <Link to="/page-2/">Go to page 2</Link>
-    </p>
+    </p> */}
   </Layout>
 )
 

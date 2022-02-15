@@ -30,7 +30,7 @@
       font-weight: 600;
     }
 
-    span {
+    .asKnown {
       background: rgba(37, 131, 253, 0.07);
       color: #2583fd;
       font-weight: 800;
@@ -43,6 +43,12 @@
     }
 
     .socialMobile {
+      display: none;
+      
+      @media only screen and (min-width: $min-medium) and (max-width: $max-medium) {
+        display: block;
+      }
+
       ul {
         display: flex;
         justify-content: center;
@@ -102,22 +108,19 @@
         }
       }
 
-      i {
+      svg {
         color: #2583fd;
         font-size: 22px;
       }
+      .number {
+        margin: 10px 0 4px;
+        font-size: 28px;
+        font-weight: 900;
+      }
 
-      span {
-        .number {
-          margin: 10px 0 4px;
-          font-size: 28px;
-          font-weight: 900;
-        }
-
-        .title {
-          text-transform: uppercase;
-          font-size: 10px;
-        }
+      .title {
+        text-transform: uppercase;
+        font-size: 10px;
       }
     }
   }
