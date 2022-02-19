@@ -1,9 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { Link } from "gatsby"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Template/layout";
-import Seo from "../components/Template/seo";
+// import Seo from "../components/Template/seo";
 
 import "../../static/main.scss"
 import LeftSide from "../components/LeftSide/LeftSide";
