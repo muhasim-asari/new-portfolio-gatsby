@@ -1,286 +1,233 @@
 @import "../../../../static/sass/variables";
 
-.ptPage {
-  visibility: visible;
-  position: static;
-  box-shadow: none;
+.boxBio {
+  .infoBio {
+    .langStatus {
+      .oneLang {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
 
-  .ptContent {
-    height: 100%;
-    overflow: hidden;
-
-    .ptScrollPdd {
-      padding: 40px !important;
-
-      .mainTitle {
-        position: relative;
-        margin-bottom: 30px;
-
-        &:before {
-          content: "";
-          display: block;
-          width: 100%;
-          height: 3px;
-          background: #f4f6f7;
-          position: absolute;
-          top: 50%;
-          z-index: 0;
+        &:last-child {
+          margin-bottom: 0;
         }
 
-        .headingText {
-          display: inline-flex;
-          align-items: center;
-          background: #fff;
-          padding: 0 20px 0 0;
-          text-transform: uppercase;
-          font-weight: 600;
-          position: relative;
-
-          svg {
-            padding: 0.25rem;
-            border: 3px solid #f4f6f7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-            border-radius: 50%;
-            margin-right: 20px;
-            color: #b7c6c9;
-          }
-        }
-      }
-
-      .boxBio {
-        .infoBio {
-          .langStatus {
-            .oneLang {
-              display: flex;
-              justify-content: space-between;
-              margin-bottom: 10px;
-
-              &:last-child {
-                margin-bottom: 0;
-              }
-
-              .starInner {
-                display: flex;
-                align-items: center;
-
-                h5 {
-                  font-size: 15px;
-                  margin: 0;
-                  margin-right: 20px;
-                  min-width: 50px;
-                }
-
-                .langStars {
-                  svg {
-                    font-size: 14px;
-                    margin: 0 3px;
-                    color: #2583fd;
-                  }
-                }
-              }
-
-              .langHead {
-                font-size: 14px;
-              }
-            }
-          }
-        }
-      }
-
-      .boxInner {
-        margin-top: 50px;
-
-        .boxTitle {
-          margin-bottom: 15px;
-
-          h6 {
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 800;
-            position: relative;
-
-            &:before {
-              content: "";
-              display: block;
-              width: 40px;
-              height: 40px;
-              background: #2583fd;
-              position: absolute;
-              left: -62px;
-              top: -9px;
-              border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
-            }
-          }
-        }
-
-        .boxContentFlex {
+        .starInner {
           display: flex;
-          justify-content: space-between;
-          width: 550px;
-          margin: auto;
-        }
-
-        .boxContent {
-          // Skill
-          .skillChart {
-            text-align: center;
-
-            .chart {
-              display: block;
-              position: relative;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              .percent {
-                display: inline-block;
-                font-size: 16px;
-                height: 100px;
-                color: #333;
-                text-align: center;
-                width: 100px;
-                z-index: 2;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: 600;
-
-                &:after {
-                  content: "%";
-                  margin-left: 0.1em;
-                  font-size: 0.8em;
-                }
-              }
-            }
-
-            canvas {
-              left: 67%;
-              margin-left: -75px;
-              position: absolute;
-              top: 0;
-            }
-          }
+          align-items: center;
 
           h5 {
+            font-size: 15px;
             margin: 0;
-            margin-top: 15px;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-          }
-
-          // Hobbies
-          .oneHobbie {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 70px;
-            height: 70px;
-            position: relative;
-            &:after {
-              content: "";
-              display: block;
-              width: 1px;
-              height: 65%;
-              background: #999;
-              opacity: 0.1;
-              right: -14px;
-              position: absolute;
-            }
-            &:nth-child(6) {
-              &:after {
-                display: none;
-              }
-            }
-            span {
-              display: block;
-              margin-top: 7px;
-              font-size: 14px;
-              font-weight: 600;
-            }
-          }
-        }
-
-        // Services
-        .serviceBox {
-          display: flex;
-          align-items: start;
-          margin-bottom: 30px;
-
-          .boxIcon {
-            background: #ebf0fc;
+            margin-right: 20px;
             min-width: 50px;
-            min-height: 50px;
-            text-align: center;
-            line-height: 50px;
-            border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+          }
 
+          .langStars {
             svg {
-              color: #2583fd;
-              font-size: 20px;
-            }
-          }
-
-          .boxText {
-            margin-left: 25px;
-
-            h6 {
-              font-size: 16px;
-              font-weight: 700;
-              margin: 0;
-              margin-bottom: 5px;
-            }
-
-            p {
-              margin: 0;
-              font-size: 15px;
-            }
-          }
-
-          .boxTitle {
-            margin-bottom: 35px;
-          }
-        }
-      }
-
-      .boxDetails {
-        .boxContent {
-          ul {
-            margin: 0;
-
-            li {
               font-size: 14px;
-              display: flex;
-              align-items: center;
-              font-weight: 700;
-              margin-bottom: 20px;
-
-              &:last-child {
-                margin-bottom: 0;
-              }
-
-              span {
-                margin-left: 15px;
-              }
+              margin: 0 3px;
+              color: #2583fd;
             }
           }
         }
-      }
 
-      .boxSkills {
-        .boxInner {
-          .boxTitle {
-            margin-bottom: 25px;
-          }
+        .langHead {
+          font-size: 14px;
         }
-      }
-
-      .boxServices {
       }
     }
   }
+}
+
+.boxInner {
+  margin-top: 50px;
+
+  .boxTitle {
+    margin-bottom: 15px;
+
+    h6 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 800;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #2583fd;
+        position: absolute;
+        left: -62px;
+        top: -9px;
+        border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+      }
+    }
+  }
+
+  .boxContentFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin: auto;
+  }
+
+  .boxContent {
+    // Skill
+    .skillChart {
+      text-align: center;
+
+      .chart {
+        display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .percent {
+          display: inline-block;
+          font-size: 16px;
+          height: 100px;
+          color: #333;
+          text-align: center;
+          width: 100px;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+
+          &:after {
+            content: "%";
+            margin-left: 0.1em;
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      canvas {
+        left: 67%;
+        margin-left: -75px;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    h5 {
+      margin: 0;
+      margin-top: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    // Hobbies
+    .oneHobbie {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 65%;
+        background: #999;
+        opacity: 0.1;
+        right: -14px;
+        position: absolute;
+      }
+      &:nth-child(6) {
+        &:after {
+          display: none;
+        }
+      }
+      span {
+        display: block;
+        margin-top: 7px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  // Services
+  .serviceBox {
+    display: flex;
+    align-items: start;
+    margin-bottom: 30px;
+
+    .boxIcon {
+      background: #ebf0fc;
+      min-width: 50px;
+      min-height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+
+      svg {
+        color: #2583fd;
+        font-size: 20px;
+      }
+    }
+
+    .boxText {
+      margin-left: 25px;
+
+      h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 15px;
+      }
+    }
+
+    .boxTitle {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.boxDetails {
+  .boxContent {
+    ul {
+      margin: 0;
+
+      li {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.boxSkills {
+  .boxInner {
+    .boxTitle {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.boxServices {
 }

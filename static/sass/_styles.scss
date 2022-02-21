@@ -44,16 +44,66 @@ a {
   }
 }
 
+.ptPage {
+  visibility: visible;
+  position: static;
+  box-shadow: none;
+  .ptContent {
+    height: 100%;
+    overflow: hidden;
+    .ptScrollPdd {
+      padding: 40px !important;
+
+      .mainTitle {
+        position: relative;
+        margin-bottom: 30px;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background: #f4f6f7;
+          position: absolute;
+          top: 50%;
+          z-index: 0;
+        }
+
+        .headingText {
+          display: inline-flex;
+          align-items: center;
+          background: #fff;
+          padding: 0 20px 0 0;
+          text-transform: uppercase;
+          font-weight: 600;
+          position: relative;
+
+          svg {
+            padding: 0.25rem;
+            border: 3px solid #f4f6f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            border-radius: 50%;
+            margin-right: 20px;
+            color: #b7c6c9;
+          }
+        }
+      }
+    }
+  }
+}
+
 .tooltipCust {
   display: inline;
   position: relative;
   z-index: 999;
   &:hover {
-
     .tooltipItem {
       &::after {
-				pointer-events: auto;
-			}
+        pointer-events: auto;
+      }
     }
   }
 }

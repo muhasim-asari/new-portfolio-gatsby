@@ -1,0 +1,33 @@
+@import "../../../../static/sass/variables";
+
+.timeLine {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  .timeLineItem {
+    padding-left: 40px;
+    position: relative;
+    &:last-child {
+      padding-bottom: 0;
+      .timeline-marker {
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    &:not(.period) {
+      &:hover {
+        .timeLineMarker {
+          &:before {
+            background: 0 0;
+            border: 3px solid #2583fd;
+          }
+        }
+      }
+    }
+  }
+}

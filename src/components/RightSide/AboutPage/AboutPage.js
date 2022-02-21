@@ -6,11 +6,11 @@ import { Code, Film, Mail, Phone, Smartphone, Star, User } from "react-feather"
 import * as styles from "./aboutPage.module.scss"
 
 const AboutPage = ({ id }) => (
-  <section className={styles.ptPage}>
-    <div className={`${styles.ptContent} ${styles.ptContentFull}`}>
-      <div className={styles.ptScrollPdd}>
-        <div className={styles.mainTitle}>
-          <span className={styles.headingText}>
+  <section className="ptPage">
+    <div className="ptContent ptContentFull}">
+      <div className="ptScrollPdd">
+        <div className="mainTitle">
+          <span className="headingText">
             <User size={38} />
             About Me
           </span>
@@ -21,7 +21,8 @@ const AboutPage = ({ id }) => (
               <div className={styles.personImg}>
                 <StaticImage
                   src="../../../../static/images/me-photos.jpg"
-                  width={200}
+                  width={280}
+                  height={320}
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="photos muhammad hasim"
