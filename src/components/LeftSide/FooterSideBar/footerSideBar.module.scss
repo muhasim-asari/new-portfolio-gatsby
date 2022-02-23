@@ -1,6 +1,10 @@
 @import "../../../../static/sass/variables";
 
 .footerSideBar {
+
+  @media only screen and (max-width: $max-mobile) {
+    display: none;
+  }
   .sideBarLinks {
     .mainLinks {
       margin: 0;

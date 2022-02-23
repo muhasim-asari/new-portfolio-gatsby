@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Col, Row } from "react-bootstrap"
-import { Code, Film, Mail, Phone, Smartphone, Star, User } from "react-feather"
+import { Calendar, Code, Film, Flag, Mail, MapPin, Phone, Smartphone, Star, User } from "react-feather"
 
 import * as styles from "./aboutPage.module.scss"
 
@@ -51,7 +51,6 @@ const AboutPage = ({ id }) => (
                         <Star size={22} />
                       </div>
                     </div>
-                    <span className={styles.langHead}>(Intermediate)</span>
                   </div>
                   <div className={styles.oneLang}>
                     <div className={styles.starInner}>
@@ -64,7 +63,6 @@ const AboutPage = ({ id }) => (
                         <Star size={22} />
                       </div>
                     </div>
-                    <span className={styles.langHead}>(Intermediate)</span>
                   </div>
                 </div>
               </div>
@@ -73,39 +71,39 @@ const AboutPage = ({ id }) => (
         </div>
         <div className={`${styles.boxDetails} ${styles.boxInner}`}>
           <div className={styles.boxTitle}>
-            <h6>Personal Informatika</h6>
+            <h6>My Personal Information</h6>
           </div>
           <div className={styles.boxContent}>
             <Row>
               <Col md={6}>
                 <ul className="listUnstyled">
                   <li className={styles.oneInfo}>
-                    <User size={24} />
-                    <span>Muhammad H. Asari</span>
+                    <User size={22} />
+                    <span>Muhammad Hasim Asari</span>
                   </li>
                   <li className={styles.oneInfo}>
-                    <Mail size={24} />
-                    <span>example@sample.com</span>
+                    <Mail size={22} />
+                    <span>muhasim2asari@gmail.com</span>
                   </li>
                   <li className={styles.oneInfo}>
-                    <Phone size={24} />
-                    <span>+8273647</span>
+                    <Phone size={22} />
+                    <span>+62 821 4136 4800</span>
                   </li>
                 </ul>
               </Col>
               <Col md={6}>
                 <ul className="listUnstyled">
                   <li className={styles.oneInfo}>
-                    <User size={24} />
-                    <span>Muhammad H. Asari</span>
+                    <Calendar size={22} />
+                    <span>25 Years Old</span>
                   </li>
                   <li className={styles.oneInfo}>
-                    <Mail size={24} />
-                    <span>example@sample.com</span>
+                    <MapPin size={22} />
+                    <span>Boyolali, Central Java</span>
                   </li>
                   <li className={styles.oneInfo}>
-                    <Phone size={24} />
-                    <span>+8273647</span>
+                    <Flag size={22} />
+                    <span>Indonesia</span>
                   </li>
                 </ul>
               </Col>
@@ -182,7 +180,11 @@ const AboutPage = ({ id }) => (
           <div className={styles.boxTitle}>
             <h6>My Hobbies</h6>
           </div>
-          <div className={`${styles.boxContent} ${styles.boxContentFlex}`}>
+          <div className={`${styles.boxContent} ${styles.boxContentFlex}`} style={{ width: "auto", flexWrap: "wrap" }}>
+            <div className={styles.oneHobbie}>
+              <Film size={24} />
+              <span>Movies</span>
+            </div>
             <div className={styles.oneHobbie}>
               <Film size={24} />
               <span>Movies</span>

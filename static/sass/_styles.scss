@@ -36,6 +36,10 @@ a {
 }
 
 .secWrapper {
+
+  @media only screen and (max-width: $max-mobile) {
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+  }
   .allPages {
     box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
       0 7px 18px rgba(0, 9, 128, 0.05);
@@ -48,11 +52,23 @@ a {
   visibility: visible;
   position: static;
   box-shadow: none;
+
+  @media only screen and (max-width: $max-mobile) {
+    height: auto;
+    position: static;
+    transform: none !important;
+    visibility: visible;
+    box-shadow: none;
+  }
   .ptContent {
     height: 100%;
     overflow: hidden;
     .ptScrollPdd {
       padding: 40px !important;
+
+      @media only screen and (max-width: $max-mobile) {
+        padding: 30px;
+      }
 
       .mainTitle {
         position: relative;

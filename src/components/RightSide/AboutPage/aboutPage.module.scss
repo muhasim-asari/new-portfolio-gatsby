@@ -1,7 +1,25 @@
 @import "../../../../static/sass/variables";
 
+.personImg {
+  @media only screen and (max-width: $max-mobile) {
+    text-align: center;
+  }
+}
+
 .boxBio {
   .infoBio {
+    @media only screen and (max-width: $max-mobile) {
+      margin-top: 30px;
+    }
+
+    @media only screen and (min-width: $min-macbook) and (max-width: $max-macbook) {
+      margin-top: 0;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
     .langStatus {
       .oneLang {
         display: flex;
@@ -34,6 +52,9 @@
 
         .langHead {
           font-size: 14px;
+          @media only screen and (min-width: $min-medium) and (max-width: $max-medium) {
+            display: none;
+          }
         }
       }
     }
@@ -140,6 +161,14 @@
         opacity: 0.1;
         right: -14px;
         position: absolute;
+
+        @media only screen and (max-width: $max-mobile) {
+          display: none;
+        }
+
+        @media only screen and (min-width: $min-macbook) and (max-width: $max-macbook) {
+          display: block;
+        }
       }
       &:nth-child(6) {
         &:after {
@@ -206,16 +235,30 @@
         font-size: 14px;
         display: flex;
         align-items: center;
-        font-weight: 700;
+        font-weight: 400;
         margin-bottom: 20px;
 
         &:last-child {
           margin-bottom: 0;
+          @media only screen and (max-width: $max-mobile) {
+            margin-bottom: 20px;
+          }
         }
 
         span {
           margin-left: 15px;
         }
+      }
+    }
+  }
+}
+
+.boxHobbies {
+  .boxInner {
+    .boxContent {
+      @media only screen and (max-width: $max-mobile) {
+        width: auto;
+        flex-wrap: wrap;
       }
     }
   }
@@ -230,4 +273,9 @@
 }
 
 .boxServices {
+  .serviceBox {
+    @media only screen and (max-width: $max-mobile) {
+      margin-bottom: 30px !important;
+    }
+  }
 }

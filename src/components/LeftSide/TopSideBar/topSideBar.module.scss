@@ -49,6 +49,10 @@
         display: block;
       }
 
+      @media only screen and (max-width: $max-mobile) {
+        display: block;
+      }
+
       ul {
         display: flex;
         justify-content: center;
@@ -81,6 +85,10 @@
   .infoProfile {
     display: flex;
     margin: 50px 0 40px;
+
+    @media only screen and (max-width: $max-mobile) {
+      margin-bottom: 0;
+    }
 
     .infoBox {
       display: flex;

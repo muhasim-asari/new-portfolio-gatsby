@@ -4,6 +4,10 @@
   position: absolute;
   bottom: 14%;
 
+  @media only screen and (min-width: $min-medium) and (max-width: $max-medium) {
+    display: none;
+  }
+
   ul {
     margin: 0;
 

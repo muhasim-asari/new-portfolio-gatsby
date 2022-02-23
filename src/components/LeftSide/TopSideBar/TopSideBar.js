@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import { Briefcase, DollarSign, Facebook, Instagram, Layers, Linkedin } from "react-feather"
+import { Briefcase, Clock, DollarSign, Facebook, Instagram, Layers, Linkedin } from "react-feather"
 
 import * as styles from "./topSideBar.module.scss"
 
@@ -40,19 +40,14 @@ const TopSideBar = () => (
       </div>
       <div className={styles.infoProfile}>
         <div className={`${styles.infoBox} experience`}>
-          <Briefcase size={24} />
-          <span className={styles.number}>3</span>
+          <Briefcase size={22} />
+          <span className={styles.number}>2</span>
           <span className={styles.title}>Years</span>
         </div>
         <div className={`${styles.infoBox} rate`}>
-          <DollarSign size={24} />
+          <Clock size={22} />
           <span className={styles.number}>24</span>
           <span className={styles.title}>Hours</span>
-        </div>
-        <div className={`${styles.infoBox} work`}>
-          <Layers size={24} />
-          <span className={styles.number}>12</span>
-          <span className={styles.title}>Project</span>
         </div>
       </div>
     </div>
