@@ -1,8 +1,14 @@
 @import "../../../static/sass/variables";
 
-.secWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0;
+.rightSide {
+
+  @media only screen and (max-width: $max-mobile) {
+    margin-top: 50px;
+  }
+  .secWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
 }
